@@ -71,7 +71,7 @@ General
   position: absolute;
   top: 8%;
   left: 19%;
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .deuxiemeImageProjetSuivant{
@@ -553,8 +553,6 @@ margin:  auto;
   padding: 0;
 }
 
-
-
 .vignettebo {
    width: 150px;
   margin-top: 30px;
@@ -570,8 +568,6 @@ margin:  auto;
 .imageProjetSuivantmin {
     border: 1px solid black;
     width: 95%;
-
-
 }
 
 .deuxiemeImageProjetSuivantmin {
@@ -580,6 +576,78 @@ margin:  auto;
   float: right;
 
 }
+
+/***********
+
+Autres projets
+
+***********/
+.projetSuivantTest{
+  display: inline-flex;
+  flex-direction: column;
+  transform: translateY(-49%);
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.projetSuivantTest h1{
+  font-family: futuraBook;
+  font-size: 16px;
+  color: #353C4C;
+  margin: 0;
+}
+
+.projetSuivantTest img{
+  width: 200px;
+  height: 200px;
+}
+
+.projetSuivantTest .apercuProjet1,
+.projetSuivantTest .apercuProjet2{
+  padding: 10px 0;
+  position: relative;
+}
+
+.apercuProjet1:hover .projet_vignette,
+.apercuProjet2:hover .projet_vignette{
+  display: block;
+}
+.projetSuivantTest .projet_vignette{
+  display: none;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  text-align: center;
+}
+
+.projetSuivantTest .projet_vignette .projet_borderInsideVignette{
+  border: 1px solid #353C4C;
+  padding: 30px;
+}
+
+.projetSuivantTest .projet_vignette .projet_borderInsideVignette:after{
+  content:"Appartements";
+  position: absolute;
+  bottom: 74%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+  z-index: 2;
+  width: 70%;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+
+.projetSuivantTest .projet_vignette h2{
+  font-size: 16px;
+  font-family: futuraLight;
+  color: #353C4C;
+  margin: 0;
+}
+
 
 .vignettesmin {
 width: 100px;
