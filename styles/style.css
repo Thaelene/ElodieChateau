@@ -1,0 +1,635 @@
+
+/*
+
+
+General
+
+
+*/
+
+
+.active23{
+  color: #353C4C;
+}
+
+
+
+.photos1{
+  margin-top : 38px;
+  height: 80vh;
+  overflow: scroll;
+  white-space:nowrap;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.descriptionProjetAppt{
+  display: inline-block;
+  padding-left: 70px;
+  transform: translateY(-70%);
+}
+.descriptionProjetAppt h1{
+  font-size: 20px;
+  color: #353C4C;
+  font-family: futuraBook;
+  margin-top: 0;
+}
+
+.descriptionProjetAppt .projetApptContent{
+  border-left: 1px solid #d7d7d7;
+  margin-top: 20px;
+}
+
+.descriptionProjetAppt .projetApptContent h2{
+  font-size: 14px;
+  font-family: futuraBook;
+  margin-top: 0;
+  padding-left: 10px;
+}
+.descriptionProjetAppt .projetApptContent h2:nth-child(2){
+  margin-bottom: 5px;
+}
+
+.projetSuivant{
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+
+}
+
+.titreProjetSuivant{
+  background-color: white;
+  position: absolute;
+  top: -5%;
+  left: 30%;
+  font-family: futuraBook;
+  font-size: 16px;
+  color: #353C4C;
+}
+
+.imageProjetSuivant{
+  position: absolute;
+  top: 8%;
+  left: 19%;
+    border: 1px solid black;
+}
+
+.deuxiemeImageProjetSuivant{
+  position: absolute;
+  top: 62%;
+  left: 19%;
+  border: 1px solid black;
+}
+
+
+.photos1 img{
+  padding-left: 7px;
+}
+
+.bor{
+  border-bottom: 1px solid #353C4C;
+  width: 100%;
+  padding-top: 60px;
+}
+
+
+/*
+
+
+Appartements
+
+
+*/
+
+#appartement{
+  display: flex;
+  flex-direction: : row;
+  justify-content: space-between;
+}
+@media screen and (max-width:991px){
+  #appartement{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.carreAp{
+  height: 300px;
+  width: 300px;
+  border: 1px solid #353C4C;
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.carreAp:hover .appt_vignette{
+  display: block;
+}
+.carreAp .appt_vignette{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+.carreAp .appt_vignette .appt_borderInsideVignette{
+  border: 1px solid #353C4C;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  width: 192px;
+}
+.carreAp .appt_vignette .appt_borderInsideVignette:after{
+  content:"Appartements";
+  position: absolute;
+  bottom: 93%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+  z-index: 2;
+  width: 70%;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+.carreAp .appt_vignette .appt_borderInsideVignette .appt_vignetteContent{
+  font-size: 20px;
+  font-family: futuraLight;
+  color: #353C4C;
+  margin-bottom: 0;
+}
+.carreAp .appt_vignette .appt_borderInsideVignette h2{
+  margin-top: 0;
+  font-size: 16px;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+.carreAp .appt_vignette .appt_borderInsideVignette h2:before{
+  content:"";
+  width: 14px;
+  height: 1px;
+  background-color: #353C4C;
+  display:block;
+  position: absolute;
+  left: 58px;
+  bottom: 50px;
+}
+.carreAp .appt_vignette .appt_borderInsideVignette h2:after{
+  content:"";
+  width: 15px;
+  height: 1px;
+  background-color: #353C4C;
+  display:block;
+  position: absolute;
+  left: 116px;
+  bottom: 50px;
+}
+
+
+.carre1Ap{
+  height: 300px;
+  width: 300px;
+  border: 1px solid #353C4C;
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.carre1Ap:hover .appt_vignette{
+  display: block;
+}
+.carre1Ap .appt_vignette{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+.carre1Ap .appt_vignette .appt_borderInsideVignette{
+  border: 1px solid #353C4C;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+.carre1Ap .appt_vignette .appt_borderInsideVignette:after{
+  content:"Appartements";
+  position: absolute;
+  bottom: 93%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+  z-index: 2;
+  width: 70%;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+.carre1Ap .appt_vignette .appt_borderInsideVignette .appt_vignetteContent{
+  font-size: 20px;
+  font-family: futuraLight;
+  color: #353C4C;
+  margin-bottom: 0;
+}
+.carre1Ap .appt_vignette .appt_borderInsideVignette h2{
+  margin-top: 0;
+  font-size: 16px;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+.carre1Ap .appt_vignette .appt_borderInsideVignette h2:before{
+  content:"";
+  width: 43px;
+  height: 1px;
+  background-color: #353C4C;
+  display:block;
+  position: absolute;
+  left: 29px;
+  bottom: 50px;
+}
+.carre1Ap .appt_vignette .appt_borderInsideVignette h2:after{
+  content:"";
+  width: 43px;
+  height: 1px;
+  background-color: #353C4C;
+  display:block;
+  position: absolute;
+  left: 117px;
+  bottom: 50px;
+}
+
+.carre2Ap{
+  height: 300px;
+  width: 300px;
+  border: 1px solid #353C4C;
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.carre2Ap:hover .appt_vignette{
+  display: block;
+}
+.carre2Ap .appt_vignette{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+.carre2Ap .appt_vignette .appt_borderInsideVignette{
+  border: 1px solid #353C4C;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  width: 192px;
+}
+.carre2Ap .appt_vignette .appt_borderInsideVignette:after{
+  content:"Appartements";
+  position: absolute;
+  bottom: 93%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+  z-index: 2;
+  width: 70%;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+.carre2Ap .appt_vignette .appt_borderInsideVignette .appt_vignetteContent{
+  font-size: 20px;
+  font-family: futuraLight;
+  color: #353C4C;
+  margin-bottom: 0;
+}
+.carre2Ap .appt_vignette .appt_borderInsideVignette h2{
+  margin-top: 0;
+  font-size: 16px;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+.carre2Ap .appt_vignette .appt_borderInsideVignette h2:before{
+  content:"";
+  width: 20px;
+  height: 1px;
+  background-color: #353C4C;
+  display:block;
+  position: absolute;
+  left: 53px;
+  bottom: 50px;
+}
+.carre2Ap .appt_vignette .appt_borderInsideVignette h2:after{
+  content:"";
+  width: 20px;
+  height: 1px;
+  background-color: #353C4C;
+  display:block;
+  position: absolute;
+  left: 116px;
+  bottom: 50px;
+}
+
+
+
+/*
+
+
+Bureaux
+
+
+*/
+
+
+.carreBu{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.carre1Bu{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+
+
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+.carre2Bu{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+.carre2Bu img{
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+
+.carreBu img{
+  width: 200px;
+  margin-left: 40px;
+  margin-top:75px;
+}
+
+
+.carre1Bu img{
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/*
+
+
+Boutiques
+
+
+*/
+
+
+.carreBo{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.carre1Bo{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+.carre2Bo{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+.carre2Bo img{
+  width: 250px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+
+.carreBo img{
+  width: 180px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+
+.carre1Bo img{
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/*
+
+Boutiques
+
+
+*/
+
+
+.carreRe{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.carreRe img{
+  width:250px;
+  margin-left: 25px;
+  margin-top:25px;
+}
+
+
+.first{
+  margin-left: 95px;;
+}
+.descri {
+  width: 220px;
+  height: 150px;
+  background-color: white;
+  margin: auto;
+  margin-top: 75px;
+}
+
+.filetAuteuil{
+  width: 200px;
+  height: 200px;
+margin:  auto;
+  vertical-align: middle;
+
+  border: 1px solid #353C4C;
+  position: relative;
+}
+
+
+.titre1{
+  text-align: center;
+  text-decoration: none;
+  color: #353C4C;
+  position: absolute;
+
+}
+
+
+.test11{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+.photossm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.descriptionProjetApptSMALL{
+  display: inline-block;
+}
+.descriptionProjetApptSMALL h1{
+  font-size: 20px;
+  color: #353C4C;
+  font-family: futuraBook;
+  margin-top: 0;
+}
+
+.descriptionProjetApptSMALL .projetApptContentSMALL{
+  border-left: 1px solid #d7d7d7;
+  margin-top: 20px;
+}
+
+.descriptionProjetApptSMALL .projetApptContentSMALL h2{
+  font-size: 14px;
+  font-family: futuraBook;
+  margin-top: 0;
+  padding-left: 10px;
+}
+.descriptionProjetApptSMALL .projetApptContentSMALL h2:nth-child(2){
+  margin-bottom: 5px;
+}
+
+
+
+.vignettes{
+  width: 200px;
+    height: 200px;
+}
+
+.vignettes img{
+  padding: 0;
+}
+
+
+
+.vignettebo {
+   width: 150px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.vignetteelo {
+  width: 150px;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.imageProjetSuivantmin {
+    border: 1px solid black;
+    width: 95%;
+
+
+}
+
+.deuxiemeImageProjetSuivantmin {
+      border: 1px solid black;
+  width: 95%;
+  float: right;
+
+}
+
+.vignettesmin {
+width: 100px;
+  height: 100px;
+
+}
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.vignettebomin {
+width: 90%;
+}
+
+.titreProjetSuivantmin {
+    font-family: futuraBook;
+  font-size: 16px;
+  color: #353C4C;
+  text-align: center;
+}
+
+.photossm {
+  margin-top: 20px;
+}
+
+.contact img{
+  width: 75%;
+}
+
+.maincontact {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: futuraBook;
+  text-align: justify;
+  color: #353C4C;
+}
+
+.contact {
+ text-align: center;
+}
+
+.adresse {
+  border-left: 1px solid #353C4C;
+  bottom: 100%;
+  margin-top: 130px;
+
+
+}
+.adresse p{
+  padding-left: 8px;
+}

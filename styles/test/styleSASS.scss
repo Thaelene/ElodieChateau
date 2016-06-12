@@ -1,0 +1,187 @@
+
+body{
+   margin: 0;
+   padding: 0;
+}
+@font-face {
+  font-family: futuraLight;
+  src: url(Futura_Light.ttf)
+}
+@font-face {
+  font-family: DIN;
+  src: url(DIN_Reg.ttf);
+}
+@font-face {
+  font-family: futuraBook;
+  src: url(futura_book.ttf);
+}
+
+.clearBoth{
+  clear: both;
+}
+
+/****************************
+
+NAVBAR
+
+***************************/
+header{
+   margin-top: 10px;
+   .hamburger{
+     margin-top: 30px;
+     margin-bottom: 20px;
+     float: right;
+      border: 1px solid #9f9d9e;
+      border-radius: 3px;
+      padding: 10px 5px 5px 5px;
+   }
+   .logo{
+     text-align: center;
+     position: relative;
+     h1{
+       font-size: 16px;
+       font-family: futuraLight;
+       background-color: #FFF;
+       position: absolute;
+       top: 70%;
+       left: 50%;
+       transf3rm: translate(-50%,-50%);
+       color: #353C4C;
+     }
+   }
+}
+header .col-md-8{
+  padding-top: 10px;
+}
+header li a{
+   font-family: futuraLight;
+   font-size: 16px;
+   text-transform: uppercase;
+   color: #9f9d9e;
+}
+
+.nav > li > a:hover{
+  color: #353C4C;
+  background-color: inherit;
+}
+
+.bor{
+border-bottom: 1px solid #353C4C;
+width: 100%;
+padding-top: 60px;
+@media screen and (max-width: 767px){
+  padding-top: 10px;
+}
+}
+
+
+
+/************************************
+
+FOOTER
+
+*************************************/
+footer .mentionsLegales{
+  bottom: 2%;
+    text-align: center;
+    border-bottom: 2px solid #353C4C;
+    h4{
+      font-size: 10px;
+      color: #353C4C;
+      margin-bottom: 5px;
+    }
+
+    p{
+      font-size: 8px;
+      color: #DDD;
+    }
+  }
+/************************************
+
+HOME
+
+*************************************/
+
+.locaux{
+  left: -100%;
+}
+.patuco{
+  right: -100%;
+  @media screen and (max-width: 544px){
+  margin-top: 40px;
+  }
+}
+.HOME_vignetteTitle{
+  font-size: 20px;
+  font-family: futuraLight;
+}
+section{
+  padding: 40px 0px;
+  .locaux, .patuco{
+    position: relative;
+  }
+  img{
+      width: 100%;
+  }
+
+  .locaux .HOME_vignette, .patuco .HOME_vignette{
+    background-color: #FFF;
+    position: absolute;
+    float: none;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    // display: none;
+    @media screen and (min-width: 768px) and (max-width: 982px){
+      top: 2%;
+      left: 20%;
+    }
+    @media screen and (min-width: 544px) and (max-width: 768px){
+      top: 33%;
+      left: 20%;
+    }
+    @media screen and (max-width: 544px){
+      top: 10%;
+      left: 20%;
+    }
+
+      .HOME_borderInsideVignette{
+        border: 2px solid #353C4C;
+        position: relative;
+        padding-top: 20px;
+
+            .HOME_rubrique{
+              position: absolute;
+              top: -27%;
+              left: 30%;
+              background-color: #FFF;
+              @media screen and (min-width: 768px) and (max-width: 982px){
+                bottom: 85%;
+                left: 15%;
+              }
+              @media screen and (min-width: 544px) and (max-width: 768px){
+                bottom: 85%;
+                left: 35%;
+              }
+              @media screen and (max-width: 544px){
+                top: -23%;
+                left: 18%;
+              }
+            }
+
+            .HOME_borderLocalisation{
+              border: 1px solid #353C4C;
+              position: absolute;
+              top: 80%;
+              left: 20%;
+            }
+
+            h2{
+              font-size: 18px;
+              background-color: #FFF;
+            }
+      }
+  }
+}
