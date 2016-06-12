@@ -566,8 +566,8 @@ Autres projets
   position: relative;
 }
 
-.apercuProjet1:hover .projet_vignette,
-.apercuProjet2:hover .projet_vignette{
+.projetSuivant .apercuProjet1:hover .projet_vignette,
+.projetSuivant .apercuProjet2:hover .projet_vignette{
   display: block;
 }
 .projetSuivant .projet_vignette{
@@ -600,6 +600,97 @@ Autres projets
 }
 
 .projetSuivant .projet_vignette h2{
+  font-size: 16px;
+  font-family: futuraLight;
+  color: #353C4C;
+  margin: 0;
+}
+
+
+/**************** VIGNETTES AUTRES PROJETS EN SMALL ***********/
+
+.projetSuivantSMALL{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.projetSuivantSMALL h1{
+  font-family: futuraBook;
+  font-size: 16px;
+  color: #353C4C;
+  margin: 0;
+}
+
+.projetSuivantSMALL .apercuProjetSMALL{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projetSuivantSMALL img{
+  width: 100%;
+}
+
+.projetSuivantSMALL .apercuProjet1.col-sm-5,
+.projetSuivantSMALL .apercuProjet2.col-sm-5{
+  padding: 10px 0;
+  position: relative;
+  width: 47.6%
+}
+
+.projetSuivantSMALL .apercuProjet1:hover .projet_vignette,
+.projetSuivantSMALL .apercuProjet2:hover .projet_vignette{
+  display: block;
+}
+.projetSuivantSMALL .projet_vignette{
+  display: none;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 556px){
+  .projetSuivantSMALL .projet_vignette{
+    padding: 30px;
+  }
+}
+
+.projetSuivantSMALL .projet_vignette .projet_borderInsideVignette{
+  border: 1px solid #353C4C;
+  padding: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 556px){
+  .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette{
+    padding: 30px;
+  }
+}
+
+.projetSuivantSMALL .projet_vignette .projet_borderInsideVignette:after{
+  content:"Appartements";
+  position: absolute;
+  bottom: 76%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF;
+  z-index: 2;
+  width: 40%;
+  font-family: futuraLight;
+  color: #353C4C;
+}
+@media screen and (max-width: 556px){
+  .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette:after{
+    bottom: 74%;
+    left: 51%;
+    width: 60%;
+  }
+}
+
+.projetSuivantSMALL .projet_vignette h2{
   font-size: 16px;
   font-family: futuraLight;
   color: #353C4C;
