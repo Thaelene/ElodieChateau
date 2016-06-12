@@ -50,38 +50,6 @@ General
   margin-bottom: 5px;
 }
 
-.projetSuivant{
-  display: inline-block;
-  position: relative;
-  padding-left: 10px;
-
-}
-
-.titreProjetSuivant{
-  background-color: white;
-  position: absolute;
-  top: -5%;
-  left: 30%;
-  font-family: futuraBook;
-  font-size: 16px;
-  color: #353C4C;
-}
-
-.imageProjetSuivant{
-  position: absolute;
-  top: 8%;
-  left: 19%;
-  border: 1px solid black;
-}
-
-.deuxiemeImageProjetSuivant{
-  position: absolute;
-  top: 62%;
-  left: 19%;
-  border: 1px solid black;
-}
-
-
 .photos1 img{
   padding-left: 7px;
 }
@@ -543,16 +511,6 @@ margin:  auto;
 }
 
 
-
-.vignettes{
-  width: 200px;
-    height: 200px;
-}
-
-.vignettes img{
-  padding: 0;
-}
-
 .vignettebo {
    width: 150px;
   margin-top: 30px;
@@ -582,7 +540,7 @@ margin:  auto;
 Autres projets
 
 ***********/
-.projetSuivantTest{
+.projetSuivant{
   display: inline-flex;
   flex-direction: column;
   transform: translateY(-49%);
@@ -590,20 +548,20 @@ Autres projets
   text-transform: uppercase;
 }
 
-.projetSuivantTest h1{
+.projetSuivant h1{
   font-family: futuraBook;
   font-size: 16px;
   color: #353C4C;
   margin: 0;
 }
 
-.projetSuivantTest img{
+.projetSuivant img{
   width: 200px;
   height: 200px;
 }
 
-.projetSuivantTest .apercuProjet1,
-.projetSuivantTest .apercuProjet2{
+.projetSuivant .apercuProjet1,
+.projetSuivant .apercuProjet2{
   padding: 10px 0;
   position: relative;
 }
@@ -612,7 +570,7 @@ Autres projets
 .apercuProjet2:hover .projet_vignette{
   display: block;
 }
-.projetSuivantTest .projet_vignette{
+.projetSuivant .projet_vignette{
   display: none;
   background-color: #FFF;
   position: absolute;
@@ -623,12 +581,12 @@ Autres projets
   text-align: center;
 }
 
-.projetSuivantTest .projet_vignette .projet_borderInsideVignette{
+.projetSuivant .projet_vignette .projet_borderInsideVignette{
   border: 1px solid #353C4C;
   padding: 30px;
 }
 
-.projetSuivantTest .projet_vignette .projet_borderInsideVignette:after{
+.projetSuivant .projet_vignette .projet_borderInsideVignette:after{
   content:"Appartements";
   position: absolute;
   bottom: 74%;
@@ -641,7 +599,7 @@ Autres projets
   color: #353C4C;
 }
 
-.projetSuivantTest .projet_vignette h2{
+.projetSuivant .projet_vignette h2{
   font-size: 16px;
   font-family: futuraLight;
   color: #353C4C;
