@@ -540,7 +540,7 @@ margin:  auto;
 Autres projets
 
 ***********/
-.projetSuivant{
+.projetSuivantAp{
   display: inline-flex;
   flex-direction: column;
   transform: translateY(-49%);
@@ -548,29 +548,29 @@ Autres projets
   text-transform: uppercase;
 }
 
-.projetSuivant h1{
+.projetSuivantAp h1{
   font-family: futuraBook;
   font-size: 16px;
   color: #353C4C;
   margin: 0;
 }
 
-.projetSuivant img{
+.projetSuivantAp img{
   width: 200px;
   height: 200px;
 }
 
-.projetSuivant .apercuProjet1,
-.projetSuivant .apercuProjet2{
+.projetSuivantAp .apercuProjet1,
+.projetSuivantAp .apercuProjet2{
   padding: 10px 0;
   position: relative;
 }
 
-.projetSuivant .apercuProjet1:hover .projet_vignette,
-.projetSuivant .apercuProjet2:hover .projet_vignette{
+.projetSuivantAp .apercuProjet1:hover .projet_vignette,
+.projetSuivantAp .apercuProjet2:hover .projet_vignette{
   display: block;
 }
-.projetSuivant .projet_vignette{
+.projetSuivantAp .projet_vignette{
   display: none;
   background-color: #FFF;
   position: absolute;
@@ -581,12 +581,12 @@ Autres projets
   text-align: center;
 }
 
-.projetSuivant .projet_vignette .projet_borderInsideVignette{
+.projetSuivantAp .projet_vignette .projet_borderInsideVignette{
   border: 1px solid #353C4C;
   padding: 30px;
 }
 
-.projetSuivant .projet_vignette .projet_borderInsideVignette:after{
+.projetSuivantAp .projet_vignette .projet_borderInsideVignette:after{
   content:"Appartements";
   position: absolute;
   bottom: 74%;
@@ -599,7 +599,7 @@ Autres projets
   color: #353C4C;
 }
 
-.projetSuivant .projet_vignette h2{
+.projetSuivantAp .projet_vignette h2{
   font-size: 16px;
   font-family: futuraLight;
   color: #353C4C;
@@ -749,4 +749,77 @@ width: 90%;
 }
 .adresse p{
   padding-left: 8px;
+}
+
+
+
+
+
+
+.projetSuivant{
+  display: inline-block;
+  position: relative;
+  padding-left: 10px;
+  
+}
+
+.titreProjetSuivant{
+  background-color: white;
+  position: absolute;
+  top: -5%;
+  left: 30%;
+  font-family: futuraBook;
+  font-size: 16px;
+  color: #353C4C;
+}
+
+.imageProjetSuivant{
+  position: absolute;
+  top: 8%;
+  left: 19%;
+    border: 1px solid black;
+}
+
+.deuxiemeImageProjetSuivant{
+  position: absolute;
+  top: 62%;
+  left: 19%;
+  border: 1px solid black;
+}
+
+.imageProjetSuivantmin {
+    border: 1px solid black;
+    width: 95%;
+
+
+}
+
+.deuxiemeImageProjetSuivantmin {
+      border: 1px solid black;
+  width: 95%;
+  float: right;
+
+}
+
+.vignettesmin {
+width: 100px;
+  height: 100px;
+
+}
+
+.vignettes{
+  width: 200px;
+    height: 200px;
+}
+
+.vignettes img{
+  padding: 0;
+}
+
+
+
+.vignettebo {
+   width: 150px;
+  margin-top: 30px;
+  margin-left: 25px;
 }
