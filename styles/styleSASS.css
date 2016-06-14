@@ -115,6 +115,10 @@ HOME
 .HOME_vignetteTitle img{
   width: 70%;
 }
+
+.HOME_borderInsideVignette .HOME_vignetteContent img{
+  width: 201px;
+}
 #homePage {
   padding: 40px 0px; }
   section .locaux, section .patuco {
@@ -158,28 +162,92 @@ HOME
        font-family:futuraLight;
        position: relative;
        display: inline-block;
-
+       margin: 0px 0px 40px 0px;
 
 }
- section .locaux .HOME_vignette .HOME_borderInsideVignette h2:after, section .patuco .HOME_vignette .HOME_borderInsideVignette h2::after {
+
+section .locaux .HOME_vignette .HOME_borderInsideVignette h2:before{
+    content:"";
+    width: 71px;
+    height: 1px;
+    background-color: #353C4C;
+    display:block;
+    position: absolute;
+    left: -77px;
+    top: 8px;
+  }
+  @media screen and (max-width: 544px){
+    section .locaux .HOME_vignette .HOME_borderInsideVignette h2:before{
+        width: 44px;
+        left: -50px;
+      }
+  }
+  @media screen and (max-width:768px) {
+      section .locaux .HOME_vignette .HOME_borderInsideVignette h2:before{
+      width: 35px;
+      left: -39px;
+    }
+  }
+  @media screen and (max-width:992px) {
+    section .locaux .HOME_vignette .HOME_borderInsideVignette h2:before{
+    width: 50px;
+    left: -55px;
+    }
+    .HOME_borderInsideVignette .HOME_vignetteContent img{
+      width: 160px;
+    }
+  }
+section .patuco .HOME_vignette .HOME_borderInsideVignette h2::before {
   content:"";
-  width: 24px;
-  height: 2px;
+  width: 11px;
+  height: 1px;
   background-color: #353C4C;
   display:block;
   position: absolute;
+  left: -15px;
+  top: 8px;
+}
+
+section .locaux .HOME_vignette .HOME_borderInsideVignette h2:after{
+ content:"";
+ width: 71px;
+ height: 1px;
+ background-color: #353C4C;
+ display:block;
+ position: absolute;
+ left: 52px;
+ top: 8px;
+}
+@media screen and (max-width: 544px){
+  section .locaux .HOME_vignette .HOME_borderInsideVignette h2:after{
+    width: 38px;
+    left: 51px;
+  }
+}
+@media screen and (max-width:768px) {
+  section .locaux .HOME_vignette .HOME_borderInsideVignette h2:after{
+  width: 32px;
   left: 50px;
-  top: 8px;
+  }
 }
-section .locaux .HOME_vignette .HOME_borderInsideVignette h2:before, section .patuco .HOME_vignette .HOME_borderInsideVignette h2::before {
-  content:"";
-  width: 24px;
-  height: 2px;
-  background-color: #353C4C;
-  display:block;
-  position: absolute;
-  left: -27px;
-  top: 8px;
+@media screen and (max-width:992px) {
+  section .locaux .HOME_vignette .HOME_borderInsideVignette h2:after{
+  width: 52px;
+  }
+}
+section .patuco .HOME_vignette .HOME_borderInsideVignette h2:after {
+ content:"";
+ width: 11px;
+ height: 1px;
+ background-color: #353C4C;
+ display:block;
+ position: absolute;
+ left: 50px;
+ top: 8px;
+}
+
+header.container{
+  padding: 0;
 }
 
 /*# sourceMappingURL=styleSASS.css.map */
