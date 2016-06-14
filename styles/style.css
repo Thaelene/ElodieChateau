@@ -735,6 +735,8 @@ width: 90%;
   margin-top: 20px;
 }
 
+/***************** CONTACT *****************/
+
 .contact img{
   width: 75%;
 }
@@ -751,16 +753,28 @@ width: 90%;
  text-align: center;
 }
 
+@media screen and (max-width: 991px){
+  .contactContent{
+    padding-top: 20px;
+  }
+
+  .contactContent .adresse{
+    margin-top: 65px;
+  }
+}
+
+
 .adresse {
   border-left: 1px solid #353C4C;
   bottom: 100%;
   margin-top: 130px;
-
-
 }
 .adresse p{
   padding-left: 8px;
 }
+
+
+/************** /
 
 .projetSuivant{
   display: inline-block;
