@@ -23,7 +23,7 @@ General
 
 .descriptionProjetAppt{
   display: inline-block;
-  padding-left: 70px;
+  padding-left: 50px;
   transform: translateY(-70%);
 }
 .descriptionProjetAppt h1{
@@ -623,24 +623,28 @@ Autres projets
   font-family: futuraBook;
   font-size: 16px;
   color: #353C4C;
-  margin: 0;
+  margin: 20px 0px 10px 0px;
 }
 
 .projetSuivantSMALL .apercuProjetSMALL{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 20px 0px;
 }
 
 .projetSuivantSMALL img{
   width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .projetSuivantSMALL .apercuProjet1.col-sm-5,
 .projetSuivantSMALL .apercuProjet2.col-sm-5{
-  padding: 10px 0;
+  padding: 0;
   position: relative;
-  width: 47.6%
+  width: 47.6%;
+  border: 1px solid #000;
 }
 
 .projetSuivantSMALL .apercuProjet1:hover .projet_vignette,
@@ -648,7 +652,7 @@ Autres projets
   display: block;
 }
 .projetSuivantSMALL .projet_vignette{
-  display: none;
+  /*display: none;*/
   background-color: #FFF;
   position: absolute;
   top: 50%;
@@ -659,26 +663,28 @@ Autres projets
 }
 @media screen and (max-width: 556px){
   .projetSuivantSMALL .projet_vignette{
-    padding: 30px;
+    padding: 20px;
   }
 }
 
 .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette{
   border: 1px solid #353C4C;
-  padding: 50px;
-  width: 100%;
+  padding: 45px 0;
+  width: 170px;
 }
 
 @media screen and (max-width: 556px){
   .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette{
-    padding: 30px;
+    padding: 0px;
+    width: 130px;
+    height: 75px;
   }
 }
 
 .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette:after{
   content:"Appartements";
   position: absolute;
-  bottom: 76%;
+  bottom: 79%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #FFF;
@@ -689,7 +695,7 @@ Autres projets
 }
 @media screen and (max-width: 556px){
   .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette:after{
-    bottom: 74%;
+    bottom: 72%;
     left: 51%;
     width: 60%;
   }
