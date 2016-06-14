@@ -12,8 +12,6 @@ General
   color: #353C4C;
 }
 
-
-
 .photos1{
   margin-top : 38px;
   height: 80vh;
@@ -543,9 +541,13 @@ Autres projets
 .projetSuivantAp{
   display: inline-flex;
   flex-direction: column;
-  transform: translateY(-49%);
+  justify-content: space-between;
+  transform: translateY(-48%);
   padding: 0 20px;
   text-transform: uppercase;
+  text-align: center;
+  height: 500px;
+  margin: 0 40px;
 }
 
 .projetSuivantAp h1{
@@ -558,12 +560,14 @@ Autres projets
 .projetSuivantAp img{
   width: 200px;
   height: 200px;
+  padding-left: 0;
 }
 
 .projetSuivantAp .apercuProjet1,
 .projetSuivantAp .apercuProjet2{
-  padding: 10px 0;
+  margin: : 20px 0px 0px 0px;
   position: relative;
+  border: 1px solid #000;
 }
 
 .projetSuivantAp .apercuProjet1:hover .projet_vignette,
@@ -583,7 +587,8 @@ Autres projets
 
 .projetSuivantAp .projet_vignette .projet_borderInsideVignette{
   border: 1px solid #353C4C;
-  padding: 30px;
+  padding: 30px 0;
+  width: 150px;
 }
 
 .projetSuivantAp .projet_vignette .projet_borderInsideVignette:after{
@@ -751,16 +756,11 @@ width: 90%;
   padding-left: 8px;
 }
 
-
-
-
-
-
 .projetSuivant{
   display: inline-block;
   position: relative;
   padding-left: 10px;
-  
+
 }
 
 .titreProjetSuivant{
@@ -790,15 +790,12 @@ width: 90%;
 .imageProjetSuivantmin {
     border: 1px solid black;
     width: 95%;
-
-
 }
 
 .deuxiemeImageProjetSuivantmin {
       border: 1px solid black;
   width: 95%;
   float: right;
-
 }
 
 .vignettesmin {
@@ -815,8 +812,6 @@ width: 100px;
 .vignettes img{
   padding: 0;
 }
-
-
 
 .vignettebo {
    width: 150px;
