@@ -84,6 +84,9 @@ Appartements
 .carreAp:hover .appt_vignette{
   display: block;
 }
+@media screen and (max-width:768px) {
+  .carreAp .appt_vignette {
+    display:block; } }
 .carreAp .appt_vignette{
   display: none;
   position: absolute;
