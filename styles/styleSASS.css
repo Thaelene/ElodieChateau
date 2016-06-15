@@ -96,6 +96,9 @@ footer .mentionsLegales {
     color: #DDD;
   padding-top: 10px;}
 
+footer .mentionsLegales.footerProjet{
+  border: 0px;
+}
 /************************************
 
 HOME
