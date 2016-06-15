@@ -20,12 +20,7 @@ $(document).ready(function() {
       $('.menu').hide();
       $('.nav').addClass('navbar-right').removeAttr('style');
       $('.nav li').removeAttr('style');
-      $('.locaux').css({
-        left: 'inherit',
-      });
-      $('.patuco').css({
-        right: 'inherit',
-      });
+
 
     } else if (xsScreen < $(window).width() /*&& $(window).width() < mdScreen*/ ) {
 
@@ -43,6 +38,15 @@ $(document).ready(function() {
     }
   }
 
+  if (smScreen < $(window).width()) {
+    $('.locaux').animate({
+      "left": "+=100%"
+    }, 2000);
+
+    $('.patuco').animate({
+      "right": "+=100%"
+    }, 2000);
+  }
 
 
   // Menu hamburger
@@ -79,13 +83,7 @@ $(document).ready(function() {
   ****************/
 
 
-  $('.locaux').animate({
-    "left": "+=100%"
-  }, 2000);
 
-  $('.patuco').animate({
-    "right": "+=100%"
-  }, 2000);
   /****************
 Scroll verticale
   ****************/

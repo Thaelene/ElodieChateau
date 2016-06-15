@@ -104,10 +104,16 @@ HOME
 .locaux {
   left: -100%;
   height: 420px;}
+  @media screen and (max-width:768px) {
+    .locaux {
+      left: 0;} }
 
 .patuco {
   right: -100%;
   height: 420px;}
+  @media screen and (max-width:768px) {
+    .patuco {
+      right: 0;} }
   @media screen and (max-width: 544px) {
     .patuco {
       margin-top: 30px; } }
@@ -153,7 +159,7 @@ HOME
     @media screen and (max-width:768px) {
       section .locaux .HOME_vignette, section .patuco .HOME_vignette {
         display:block; } }
-        
+
     section .locaux .HOME_vignette .HOME_borderInsideVignette, section .patuco .HOME_vignette .HOME_borderInsideVignette {
       border: 1px solid #353C4C;
       position: relative;
