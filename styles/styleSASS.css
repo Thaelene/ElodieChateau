@@ -13,6 +13,9 @@ body {
   src: url(futura_book.ttf); }
 .clearBoth {
   clear: both; }
+  a{
+    color: #353C4C;
+  }
 
 /****************************
 
@@ -153,7 +156,9 @@ HOME
     section .locaux .HOME_vignette .HOME_borderInsideVignette, section .patuco .HOME_vignette .HOME_borderInsideVignette {
       border: 1px solid #353C4C;
       position: relative;
-      text-align: center;}
+      text-align: center;
+      color: #353C4C;
+      }
       section .locaux .HOME_vignette .HOME_borderInsideVignette .HOME_rubrique, section .patuco .HOME_vignette .HOME_borderInsideVignette .HOME_rubrique {
         position: relative;
         padding: 0 10px;
