@@ -153,6 +153,7 @@ HOME
     @media screen and (max-width:768px) {
       section .locaux .HOME_vignette, section .patuco .HOME_vignette {
         display:block; } }
+        
     section .locaux .HOME_vignette .HOME_borderInsideVignette, section .patuco .HOME_vignette .HOME_borderInsideVignette {
       border: 1px solid #353C4C;
       position: relative;

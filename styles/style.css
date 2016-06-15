@@ -81,12 +81,7 @@ Appartements
   position: relative;
 }
 
-.carreAp:hover .appt_vignette{
-  display: block;
-}
-@media screen and (max-width:768px) {
-  .carreAp .appt_vignette {
-    display:block; } }
+
 .carreAp .appt_vignette{
   display: none;
   position: absolute;
@@ -98,6 +93,13 @@ Appartements
   text-transform: uppercase;
   padding: 30px;
 }
+.carreAp:hover .appt_vignette{
+  display: block;
+}
+@media screen and (max-width:768px) {
+  .carreAp .appt_vignette {
+    display:block; } }
+
 .carreAp .appt_vignette .appt_borderInsideVignette{
   border: 1px solid #353C4C;
   padding: 30px;
@@ -160,9 +162,6 @@ Appartements
   position: relative;
 }
 
-.carre1Ap:hover .appt_vignette{
-  display: block;
-}
 .carre1Ap .appt_vignette{
   display: none;
   position: absolute;
@@ -174,6 +173,13 @@ Appartements
   text-transform: uppercase;
   padding: 30px;
 }
+.carre1Ap:hover .appt_vignette{
+  display: block;
+}
+@media screen and (max-width:768px) {
+  .carre1Ap .appt_vignette {
+    display:block; } }
+
 .carre1Ap .appt_vignette .appt_borderInsideVignette{
   border: 1px solid #353C4C;
   padding: 30px;
@@ -234,9 +240,6 @@ Appartements
   position: relative;
 }
 
-.carre2Ap:hover .appt_vignette{
-  display: block;
-}
 .carre2Ap .appt_vignette{
   display: none;
   position: absolute;
@@ -248,6 +251,13 @@ Appartements
   text-transform: uppercase;
   padding: 30px;
 }
+.carre2Ap:hover .appt_vignette{
+  display: block;
+}
+@media screen and (max-width:768px) {
+  .carre2Ap .appt_vignette {
+    display:block; } }
+
 .carre2Ap .appt_vignette .appt_borderInsideVignette{
   border: 1px solid #353C4C;
   padding: 30px;
