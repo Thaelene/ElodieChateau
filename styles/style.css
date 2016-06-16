@@ -25,7 +25,6 @@ General
 .descriptionProjetAppt{
   display: inline-block;
   padding-left: 50px;
-  transform: translateY(-70%);
 }
 .descriptionProjetAppt h1{
   font-size: 20px;
@@ -47,7 +46,7 @@ General
 }
 .descriptionProjetAppt .projetApptContent h2:nth-child(2){
   margin-bottom: 5px;
-  
+
 }
 
 .photos1 img{
@@ -65,8 +64,9 @@ Appartements
 
 #appartement{
   display: flex;
-  flex-direction: : row;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 0;
 }
 @media screen and (max-width:991px){
   #appartement{
@@ -74,6 +74,13 @@ Appartements
     align-items: center;
   }
 }
+/****** Correction Bootstrap ********/
+#appartement.container:before,
+#appartement.container:after{
+  display: none;
+}
+
+/****** Fin Correction Bootstrap ****/
 
 .carreAp{
   height: 300px;
@@ -378,7 +385,7 @@ float: right;
   .carreBu {
    margin: auto;
       margin-bottom: 30px;
-    
+
   }
 }
 
@@ -387,7 +394,7 @@ float: right;
     float: inherit;
    margin: auto;
       margin-bottom: 30px;
-    
+
   }
 }
 
@@ -452,7 +459,7 @@ float: right;
   .carreBo {
    margin: auto;
       margin-bottom: 30px;
-    
+
   }
 }
 
@@ -461,7 +468,7 @@ float: right;
     float: inherit;
    margin: auto;
       margin-bottom: 30px;
-    
+
   }
 }
 /*
@@ -494,7 +501,7 @@ Restaurant
   .carreRe {
    margin: auto;
       margin-bottom: 30px;
-    
+
   }
 }
 
@@ -632,7 +639,7 @@ Autres projets
   display: block;
 }
 .projetSuivantAp .projet_vignette{
-  display: none;
+  /*display: none;*/
   background-color: #FFF;
   position: absolute;
   top: 50%;
@@ -651,24 +658,108 @@ Autres projets
 .projetSuivantAp .projet_vignette .projet_borderInsideVignette:after{
   content:"Appartements";
   position: absolute;
-  bottom: 74%;
+  bottom: 76%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #FFF;
   z-index: 2;
-  width: 70%;
+  width: 56%;
   font-family: futuraLight;
   color: #353C4C;
 }
-
-.projetSuivantAp .projet_vignette h2{
-  font-size: 16px;
+.projetSuivantAp .projet_vignette h1{
   font-family: futuraLight;
-  color: #353C4C;
+}
+.projetSuivantAp .projet_vignette h2{
+  font-size: 14px;
+  font-family: futuraLight;
+  color: #9f9d9e;
   margin: 0;
 }
 
+/*** Traits before / after Paris ***/
+.apercuProjet1 .traitsMontmartre h2:before{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 22%;
+  width: 33px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+.apercuProjet1 .traitsMontmartre h2:after{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 60%;
+  width: 33px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
 
+.apercuProjet2 .traitsSablons h2:before{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 32%;
+  width: 15px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+.apercuProjet2 .traitsSablons h2:after{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 60%;
+  width: 15px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+
+.apercuProjet2 .traitsAuteuil h2:before{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 35%;
+  width: 10px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+.apercuProjet2 .traitsAuteuil h2:after{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 60%;
+  width: 9px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+.apercuProjet1 .traitsAuteuil h2:before{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 35%;
+  width: 10px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+.apercuProjet1 .traitsAuteuil h2:after{
+  content:"";
+  position: absolute;
+  bottom: 44%;
+  left: 60%;
+  width: 9px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
 /**************** VIGNETTES AUTRES PROJETS EN SMALL ***********/
 
 .projetSuivantSMALL{

@@ -116,14 +116,16 @@ HOME
 *************************************/
 .locaux {
   left: -100%;
-  height: 420px;}
+  height: 420px;
+padding-right: 7px;}
   @media screen and (max-width:768px) {
     .locaux {
       left: 0;} }
 
 .patuco {
   right: -100%;
-  height: 420px;}
+  height: 420px;
+  padding-left: 7px;}
   @media screen and (max-width:768px) {
     .patuco {
       right: 0;} }
