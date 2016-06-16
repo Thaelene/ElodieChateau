@@ -14,7 +14,7 @@ General
 }
 
 .photos1{
-  margin-top : 38px;
+  margin-top : 31px;
   height: 80vh;
   overflow: scroll;
   white-space:nowrap;
@@ -47,6 +47,7 @@ General
 }
 .descriptionProjetAppt .projetApptContent h2:nth-child(2){
   margin-bottom: 5px;
+  
 }
 
 .photos1 img{
@@ -373,7 +374,7 @@ float: right;
 }
 
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media screen and (min-width: 200px) and (max-width: 991px) {
   .carreBu {
    margin: auto;
       margin-bottom: 30px;
@@ -381,7 +382,7 @@ float: right;
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media screen and (min-width: 200px) and (max-width: 991px) {
   .carre2Bu {
     float: inherit;
    margin: auto;
@@ -447,7 +448,7 @@ float: right;
 
 
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media screen and (min-width: 200px) and (max-width: 991px) {
   .carreBo {
    margin: auto;
       margin-bottom: 30px;
@@ -455,7 +456,7 @@ float: right;
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media screen and (min-width: 200px) and (max-width: 991px) {
   .carre2Bo {
     float: inherit;
    margin: auto;
@@ -484,10 +485,12 @@ Restaurant
   margin-top:25px;
 }
 
+.lastpic{
+  padding-right: 50px;
+}
 
 
-
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media screen and (min-width: 200px) and (max-width: 991px) {
   .carreRe {
    margin: auto;
       margin-bottom: 30px;

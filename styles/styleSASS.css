@@ -87,9 +87,18 @@ header li a {
 FOOTER
 
 *************************************/
+
+footer{
+  bottom: 30px;
+  left: 40px;
+position: fixed;
+  margin: auto;
+}
 footer .mentionsLegales {
-  text-align: center;
-  border-top: 1.5px solid #353C4C; }
+text-align: center;
+
+  border-top: 1.5px solid #353C4C;
+}
 
   footer .mentionsLegales p {
     font-size: 8px;
