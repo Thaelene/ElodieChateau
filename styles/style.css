@@ -74,13 +74,6 @@ Appartements
     align-items: center;
   }
 }
-/****** Correction Bootstrap ********/
-#appartement.container:before,
-#appartement.container:after{
-  display: none;
-}
-
-/****** Fin Correction Bootstrap ****/
 
 .carreAp{
   height: 300px;
@@ -678,7 +671,7 @@ Autres projets
 }
 
 /*** Traits before / after Paris ***/
-.apercuProjet1 .traitsMontmartre h2:before{
+.projetSuivantAp .apercuProjet1 .traitsMontmartre h2:before{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -688,7 +681,7 @@ Autres projets
   display: block;
   background-color: #353C4C;
 }
-.apercuProjet1 .traitsMontmartre h2:after{
+.projetSuivantAp .apercuProjet1 .traitsMontmartre h2:after{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -699,7 +692,7 @@ Autres projets
   background-color: #353C4C;
 }
 
-.apercuProjet2 .traitsSablons h2:before{
+.projetSuivantAp .apercuProjet2 .traitsSablons h2:before{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -709,7 +702,7 @@ Autres projets
   display: block;
   background-color: #353C4C;
 }
-.apercuProjet2 .traitsSablons h2:after{
+.projetSuivantAp .apercuProjet2 .traitsSablons h2:after{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -720,7 +713,7 @@ Autres projets
   background-color: #353C4C;
 }
 
-.apercuProjet2 .traitsAuteuil h2:before{
+.projetSuivantAp .apercuProjet2 .traitsAuteuil h2:before{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -730,7 +723,7 @@ Autres projets
   display: block;
   background-color: #353C4C;
 }
-.apercuProjet2 .traitsAuteuil h2:after{
+.projetSuivantAp .apercuProjet2 .traitsAuteuil h2:after{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -740,7 +733,7 @@ Autres projets
   display: block;
   background-color: #353C4C;
 }
-.apercuProjet1 .traitsAuteuil h2:before{
+.projetSuivantAp .apercuProjet1 .traitsAuteuil h2:before{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -750,7 +743,7 @@ Autres projets
   display: block;
   background-color: #353C4C;
 }
-.apercuProjet1 .traitsAuteuil h2:after{
+.projetSuivantAp .apercuProjet1 .traitsAuteuil h2:after{
   content:"";
   position: absolute;
   bottom: 44%;
@@ -760,7 +753,11 @@ Autres projets
   display: block;
   background-color: #353C4C;
 }
-/**************** VIGNETTES AUTRES PROJETS EN SMALL ***********/
+/****************
+
+VIGNETTES AUTRES PROJETS EN SMALL
+
+*****************/
 
 .projetSuivantSMALL{
   text-align: center;
@@ -768,10 +765,15 @@ Autres projets
 }
 
 .projetSuivantSMALL h1{
-  font-family: futuraBook;
+  font-family: futuraLight;
   font-size: 16px;
   color: #353C4C;
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0px 0px 0px;
+}
+@media screen and (max-width: 556px){
+  .projetSuivantSMALL h1{
+    margin: 20px 0px 0px 0px;
+  }
 }
 
 .projetSuivantSMALL .apercuProjetSMALL{
@@ -832,7 +834,7 @@ Autres projets
 .projetSuivantSMALL .projet_vignette .projet_borderInsideVignette:after{
   content:"Appartements";
   position: absolute;
-  bottom: 79%;
+  bottom: 77%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #FFF;
@@ -850,11 +852,145 @@ Autres projets
 }
 
 .projetSuivantSMALL .projet_vignette h2{
-  font-size: 16px;
+  font-size: 14px;
   font-family: futuraLight;
   color: #353C4C;
   margin: 0;
 }
+
+/************ Traits encadrant Paris en small **********/
+.projetSuivantSMALL .apercuProjet1 .traitsMontmartre h2:before{
+  content:"";
+  position: absolute;
+  bottom: 42%;
+  left: 29%;
+  width: 33px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+.projetSuivantSMALL .apercuProjet1 .traitsMontmartre h2:after{
+  content:"";
+  position: absolute;
+  bottom: 42%;
+  left: 58%;
+  width: 33px;
+  height: 1px;
+  display: block;
+  background-color: #353C4C;
+}
+  @media screen and (max-width: 556px){
+    .projetSuivantSMALL .apercuProjet1 .traitsMontmartre h2:before{
+      content:"";
+      position: absolute;
+      bottom: 44%;
+      left: 18%;
+      width: 33px;
+      height: 1px;
+      display: block;
+      background-color: #353C4C;
+    }
+    .projetSuivantSMALL .apercuProjet1 .traitsMontmartre h2:after{
+      content:"";
+      position: absolute;
+      bottom: 44%;
+      left: 62%;
+      width: 31px;
+      height: 1px;
+      display: block;
+      background-color: #353C4C;
+    }
+  }
+
+  .projetSuivantSMALL .apercuProjet2 .traitsSablons h2:before{
+    content:"";
+    position: absolute;
+    bottom: 42%;
+    left: 36%;
+    width: 14px;
+    height: 1px;
+    display: block;
+    background-color: #353C4C;
+  }
+  .projetSuivantSMALL .apercuProjet2 .traitsSablons h2:after{
+    content:"";
+    position: absolute;
+    bottom: 42%;
+    left: 58%;
+    width: 15px;
+    height: 1px;
+    display: block;
+    background-color: #353C4C;
+  }
+    @media screen and (max-width: 556px){
+      .projetSuivantSMALL .apercuProjet2 .traitsSablons h2:before{
+        content:"";
+        position: absolute;
+        bottom: 44%;
+        left: 29%;
+        width: 15px;
+        height: 1px;
+        display: block;
+        background-color: #353C4C;
+      }
+      .projetSuivantSMALL .apercuProjet2 .traitsSablons h2:after{
+        content:"";
+        position: absolute;
+        bottom: 44%;
+        left: 61%;
+        width: 15px;
+        height: 1px;
+        display: block;
+        background-color: #353C4C;
+      }
+    }
+
+  .projetSuivantSMALL .apercuProjet2 .traitsAuteuil h2:before,
+  .projetSuivantSMALL .apercuProjet1 .traitsAuteuil h2:before{
+      content:"";
+      position: absolute;
+      bottom: 42%;
+      left: 39%;
+      width: 10px;
+      height: 1px;
+      display: block;
+      background-color: #353C4C;
+  }
+  .projetSuivantSMALL .apercuProjet2 .traitsAuteuil h2:after,
+  .projetSuivantSMALL .apercuProjet1 .traitsAuteuil h2:after{
+      content:"";
+      position: absolute;
+      bottom: 42%;
+      left: 57%;
+      width: 10px;
+      height: 1px;
+      display: block;
+      background-color: #353C4C;
+  }
+    @media screen and (max-width: 556px){
+      .projetSuivantSMALL .apercuProjet2 .traitsAuteuil h2:before,
+      .projetSuivantSMALL .apercuProjet1 .traitsAuteuil h2:before{
+          content:"";
+          position: absolute;
+          bottom: 44%;
+          left: 33%;
+          width: 10px;
+          height: 1px;
+          display: block;
+          background-color: #353C4C;
+      }
+      .projetSuivantSMALL .apercuProjet2 .traitsAuteuil h2:after,
+      .projetSuivantSMALL .apercuProjet1 .traitsAuteuil h2:after{
+          content:"";
+          position: absolute;
+          bottom: 44%;
+          left: 60%;
+          width: 10px;
+          height: 1px;
+          display: block;
+          background-color: #353C4C;
+      }
+    }
 
 
 .vignettesmin {
