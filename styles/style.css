@@ -978,7 +978,7 @@ width: 90%;
 }
 
 .titreProjetSuivantmin {
-    font-family: futuraBook;
+    font-family: futuraLight;
   font-size: 16px;
   color: #353C4C;
   text-align: center;
@@ -1047,7 +1047,7 @@ margin-bottom: 10px;
   position: absolute;
   top: -5%;
   left: 30%;
-  font-family: futuraBook;
+  font-family: futuraLight;
   font-size: 16px;
   color: #353C4C;
 }
