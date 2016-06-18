@@ -328,7 +328,7 @@ Bureaux
   width: 300px;
   height: 300px;
   border: 1px solid black;
-
+margin: auto;
   margin-bottom: 30px;
 }
 
@@ -348,7 +348,7 @@ Bureaux
   width: 300px;
   height: 300px;
   border: 1px solid black;
-float: right;
+margin: auto;
   margin-bottom: 30px;
 }
 
@@ -374,22 +374,6 @@ float: right;
 }
 
 
-@media screen and (min-width: 200px) and (max-width: 991px) {
-  .carreBu {
-   margin: auto;
-      margin-bottom: 30px;
-
-  }
-}
-
-@media screen and (min-width: 200px) and (max-width: 991px) {
-  .carre2Bu {
-    float: inherit;
-   margin: auto;
-      margin-bottom: 30px;
-
-  }
-}
 
 /*
 
@@ -404,7 +388,7 @@ Boutiques
   width: 300px;
   height: 300px;
   border: 1px solid black;
-
+margin: auto;
   margin-bottom: 30px;
 }
 
@@ -421,7 +405,7 @@ Boutiques
   width: 300px;
   height: 300px;
   border: 1px solid black;
-float: right;
+margin: auto;
   margin-bottom: 30px;
 }
 
@@ -448,22 +432,6 @@ float: right;
 
 
 
-@media screen and (min-width: 200px) and (max-width: 991px) {
-  .carreBo {
-   margin: auto;
-      margin-bottom: 30px;
-
-  }
-}
-
-@media screen and (min-width: 200px) and (max-width: 991px) {
-  .carre2Bo {
-    float: inherit;
-   margin: auto;
-      margin-bottom: 30px;
-
-  }
-}
 /*
 
 Restaurant
@@ -1132,7 +1100,7 @@ width: 100px;
 
 .justiftitre {
 text-align: justify;
-  text-align-last: justify;
+
 
 }
 
