@@ -1020,7 +1020,7 @@ width: 90%;
 .adresse {
   border-left: 1px solid #353C4C;
   width: 270px;
-  margin-top: 130px;
+  margin-top: 120px;
 }
 .adresse p{
   padding-left: 8px;
@@ -1106,4 +1106,13 @@ text-align: justify;
 
 .numero {
   width: 160px;
+}
+
+#footer {
+    position: fixed;
+    botom: 0;
+}
+.icofaceb {
+  padding-left: 7px;
+  margin-bottom: 10px;
 }
