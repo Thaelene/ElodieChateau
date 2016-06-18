@@ -91,6 +91,7 @@ FOOTER
 *************************************/
 
 footer{
+  display: none;
   bottom: 30px;
   left: 40px;
 

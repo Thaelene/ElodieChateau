@@ -505,7 +505,7 @@ margin:  auto;
 
 .photossm img{
   width: 100%;
-  margin-bottom: 10px;
+
 }
 
 .descriptionProjetApptSMALL{
@@ -536,7 +536,7 @@ margin:  auto;
 
 .vignettebo {
    width: 150px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 25px;
 }
 
@@ -974,6 +974,7 @@ width: 100px;
 
 .vignettebomin {
 width: 90%;
+
 }
 
 .titreProjetSuivantmin {
@@ -985,6 +986,11 @@ width: 90%;
 
 .photossm {
   margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.photossm img{
+margin-bottom: 10px;
 }
 
 /***************** CONTACT *****************/
@@ -1060,10 +1066,7 @@ width: 90%;
   border: 1px solid black;
 }
 
-.imageProjetSuivantmin {
-    border: 1px solid black;
-    width: 95%;
-}
+
 
 .deuxiemeImageProjetSuivantmin {
       border: 1px solid black;
@@ -1086,11 +1089,7 @@ width: 100px;
   padding: 0;
 }
 
-.vignettebo {
-   width: 150px;
-  margin-top: 30px;
-  margin-left: 25px;
-}
+
 
 .no-padding {
   padding: 0;
@@ -1100,6 +1099,7 @@ width: 100px;
 
 .justiftitre {
 text-align: justify;
+    text-align-last: justify;
 
 
 }
@@ -1108,11 +1108,12 @@ text-align: justify;
   width: 160px;
 }
 
-#footer {
-    position: fixed;
-    botom: 0;
-}
+
 .icofaceb {
   padding-left: 7px;
   margin-bottom: 10px;
+}
+
+.padpat{
+  padding-right: 50px;
 }
