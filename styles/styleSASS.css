@@ -121,9 +121,12 @@ HOME
   left: -100%;
   height: 420px;
 padding-right: 7px;}
+
+
   @media screen and (max-width:768px) {
     .locaux {
-      left: 0;} }
+      left: 0;
+    height: auto;} }
 
 .patuco {
   right: -100%;
@@ -131,7 +134,8 @@ padding-right: 7px;}
   padding-left: 7px;}
   @media screen and (max-width:768px) {
     .patuco {
-      right: 0;} }
+      right: 0;
+    height: auto;} }
   @media screen and (max-width: 544px) {
     .patuco {
       margin-top: 30px; } }

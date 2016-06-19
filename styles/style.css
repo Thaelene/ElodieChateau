@@ -1120,3 +1120,7 @@ text-align: justify;
 .padpat{
   padding-right: 50px;
 }
+.imgtest {
+  width: 100%;
+  height: auto;
+}
