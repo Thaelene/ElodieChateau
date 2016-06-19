@@ -8,6 +8,9 @@ General
 
 
 */
+.hamburger{
+  display: none;
+}
 
 .active23{
   color: #353C4C;
