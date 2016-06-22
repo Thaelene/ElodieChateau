@@ -88,20 +88,21 @@ $(document).ready(function() {
 Scroll verticale
   ****************/
   $('.photos1').mousewheel(function(e, delta) {
-    this.scrollLeft -= (delta * 50);
+    this.scrollLeft -= (delta * 40);
     e.preventDefault();
   });
 
   /****************
 LOAD
   ****************/
-  $("img.lazy").fadeIn(700);
+  $("img.lazy").fadeIn(400);
 
   $("img.lazy").lazyload({
      effect : "fadeIn",
-     effectspeed: 700,
-     threshold : 2570,
-     event : "mousewheel"
+     effectspeed: 400,
+     threshold : 3000,
+     event : "wheel",
+     event : "mouseover"
   });
 
 });

@@ -1126,7 +1126,7 @@ text-align: justify;
 }
 
 img[src ~= "images/load.gif"]{
-   width: 100px;
-   height: 100px;
+   width: 120px;
+   height: 120px;
    margin: 15% 10%;
 }
