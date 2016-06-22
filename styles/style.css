@@ -1124,3 +1124,9 @@ text-align: justify;
   width: 100%;
   height: auto;
 }
+
+img[src ~= "images/load.gif"]{
+   width: 100px;
+   height: 100px;
+   margin: 15% 10%;
+}
